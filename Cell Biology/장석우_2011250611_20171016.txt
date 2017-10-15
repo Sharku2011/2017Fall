@@ -4,3 +4,15 @@
 하지만 이렇게 샤페롱 단백질과 분리되지 않고 합쳐진 단백질들이 뭉쳐서 쌓인 덩어리를 amyloid라고 부르는데, 정상적인 단백질은 생성되는 비율과 같은 비율로 분해되지만, 이러한 아밀로이드 침전물 덩어리들은 매우 안정적이어서
  잘 분해되지 않아 장기에 침작되게 된다. 이렇게 아밀로이드가 침작된 장기는 점차 기능저하를 겪다가 최종적으로는 기능을 잃게 된다.
 이런 기능 저하로 인한 질병중 가장 대표적인 예가 낭포(소)성 섬유증(Cystic fibrosis)로, 유전자에 존재하는 결함이 염화물과 나트륨의 세포막 이동을 조절하는 단백질 생산에 악영향을 미쳐 수분을 잃고 각종 분비샘의 분비와 기능에 문제를 일으킨다.
+
+네이버 지식백과 - 생명과학대사전 - 샤프론, 보호단백질
+http://terms.naver.com/entry.nhn?docId=2692245&cid=42411&categoryId=42411
+
+네이버 지식백과 - 희귀난치성질환 정보 - 아밀로드이증
+http://terms.naver.com/entry.nhn?docId=2354270&cid=51362&categoryId=51362
+
+네이버 지식백과 - 희귀난치성질환 정보 - 낭성 섬유증
+http://terms.naver.com/entry.nhn?docId=2354904&cid=51362&categoryId=51362
+
+Therapeutic approaches to Protein Misfolding Diseases
+https://www.slideshare.net/asranasir7/therapeutic-approaches-to-protein-misfolding-diseases-53072298
