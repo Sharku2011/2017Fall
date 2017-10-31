@@ -41,7 +41,7 @@ function pushbutton1_Callback(hObject, eventdata, handles)
 global phantom
 
 phantom = imread('Phantom.png');
-axes( %{fill here} );
+axes( handles.axes1 );
 imshow(phantom);
 
 
@@ -51,7 +51,7 @@ global phantom
 
 phantom = imread('Phantom.png');
 phantom = imnoise(phantom, 'poisson');
-axes( %{fill here} );
+axes( handles.axes2 );
 imshow(phantom);
 
 
@@ -60,7 +60,7 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 global phantom
 global sino_image;
 
-sino_image = %{fill here} ;
+sino_image = projection(phantom) ;
 axes(handles.axes2);
 imshow(sino_image, []);
 
