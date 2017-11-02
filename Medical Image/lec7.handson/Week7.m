@@ -50,8 +50,8 @@ function pushbutton2_Callback(hObject, eventdata, handles)
 global phantom
 
 phantom = imread('Phantom.png');
-phantom = imnoise(phantom, 'poisson');
-axes( handles.axes2 );
+phantom = imnoise(phantom, 'poisson' );
+axes( handles.axes1 );
 imshow(phantom);
 
 
@@ -65,6 +65,7 @@ axes(handles.axes2);
 imshow(sino_image, []);
 
 
+
 % --- Executes on button press in pushbutton4.
 function pushbutton4_Callback(hObject, eventdata, handles)
 global filter;
@@ -72,7 +73,7 @@ global filter;
 filter = make_filt(1);
 axes(handles.axes3);
 plot(filter);
-
+handles.axes3.XLim = [0, 255];
 
 % --- Executes on button press in pushbutton5.
 function pushbutton5_Callback(hObject, eventdata, handles)
@@ -81,7 +82,7 @@ global filter;
 filter = make_filt(2);
 axes(handles.axes3);
 plot(filter);
-
+handles.axes3.XLim = [0, 255];
 
 % --- Executes on button press in pushbutton6.
 function pushbutton6_Callback(hObject, eventdata, handles)
@@ -90,6 +91,7 @@ global filter;
 filter = make_filt(0);
 axes(handles.axes3);
 plot(filter);
+handles.axes3.XLim = [0, 255];
 
 
 % --- Executes on button press in pushbutton7.
