@@ -79,6 +79,6 @@ toc;
 
 figure;
 subplot(2,2,1), imshow(imm), title('original', 'fontsize', 14);
-subplot(2,2,2), imshow(iml_fr3), title('fr3', 'fontsize', 14);
+subplot(2,2,2), imshow(iml_fr3,[]), title('fr3', 'fontsize', 14);
 subplot(2,2,3), imshow(iml_fr4), title('fr4', 'fontsize', 14);
 subplot(2,2,4), imshow(iml_conv,[]), title('conv', 'fontsize', 14);
