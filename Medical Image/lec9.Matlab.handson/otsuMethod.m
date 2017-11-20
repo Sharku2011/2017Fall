@@ -1,22 +1,20 @@
-function result = otsuMethod(image, method)
+function result = otsuMethod(image)
     
-    pixels = numel(image);
-    [cnt, bin] = imhist(image);
-    [m, n] = size(cnt);
-    p = cnt / pixels;
-    
-    if method == 1
-        p1 = zeros([m,n]);
-        m = zeros([m,n]);
-        for i=1:m
-            p1(i) = sum(p(1:i));
-            m(i) = sum(i*p(1:i));
-        end
-        
-        
-    else
-        
-    end
-    
-    result = 0;
+    cnt = imhist(image,256);
+
+    CNT = cumsum(cnt);
+    pixels = CNT(end,1);
+
+    p = [cnt, pixels - cnt] / pixels;
+    omega = [CNT, pixels - CNT] / pixels;
+
+    mu = (1:256)' .* p(:,1);
+
+    mu_total = mu(end,1);
+
+    var = omega(:,1) .* omega(:,2) .* ((mu - (mu_total - mu)).^2);
+
+    thres = find(var == max(var));
+
+    result = (thres-1) / 255;
 end

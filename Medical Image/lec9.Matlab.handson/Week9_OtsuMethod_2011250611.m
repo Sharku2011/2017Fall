@@ -1,9 +1,11 @@
-%% Setup
+close all hidden; clear; clc;
 
-clear; clc;
+img = imread('ultrasound.jpg');
 
-img = im2double(imread('ultrasound.jpg'));
+norm_thres = otsuMethod(img);
 
-imhist(img,256);
+timg = graythresh(im2double(img));
 
-otsuMethod(img,1);
+figure('name', 'Otsu''s method');
+subplot(1,2,1), imshow(imbinarize(img, norm_thres)), title('My Method');
+subplot(1,2,2), imshow(imbinarize(img, timg)), title('Built-In Method');

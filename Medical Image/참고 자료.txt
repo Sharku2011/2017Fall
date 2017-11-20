@@ -1,2 +1,5 @@
 푸리에 변환
 http://darkpgmr.tistory.com/171
+
+합성곱 - 컨볼루션
+http://umbum.tistory.com/223
