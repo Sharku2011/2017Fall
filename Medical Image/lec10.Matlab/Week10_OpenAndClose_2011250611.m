@@ -15,13 +15,13 @@ Morph{2} = imclose(img_noise, cr);
 
 Filtered = cell(1,2);
 Filtered{1} = imopen(imclose(img_noise,cr),cr);
-Filtered{2} = imclose(imopen(img_noise,cr),cr);
+Filtered{2} = imclose(imopen(img_noise,cr),cr); 
 
 figure;
-subplot(1,3,1), imshow(img_noise);
-subplot(1,3,2), imshow(Morph{1});
-subplot(1,3,3), imshow(Morph{2});
+subplot(2,2,1), imshow(img_noise); title('noise');
+subplot(2,2,3), imshow(Morph{1});title('open');
+subplot(2,2,4), imshow(Morph{2}); title('close');
 
 figure;
-subplot(1,2,1), imshow(Filtered{1});
-subplot(1,2,2), imshow(Filtered{2});
+subplot(1,2,1), imshow(Filtered{1}); title('close-open');
+subplot(1,2,2), imshow(Filtered{2}); title('open-close');

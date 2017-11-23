@@ -15,20 +15,20 @@ Morph{1,1} = imdilate(lung, sq);
 Morph{1,2} = imerode(lung, sq);
 
 figure('name', 'dilate & erode');
-subplot(1,3,1), imshow(lung);
-subplot(1,3,2), imshow(Morph{1,1});
-subplot(1,3,3), imshow(Morph{1,2});
+subplot(2,2,1), imshow(lung), title('original');
+subplot(2,2,3), imshow(Morph{1,1}), title('dilate');
+subplot(2,2,4), imshow(Morph{1,2}), title('erode');
 
 temp1 = MyDilate(lung, sq);
 temp2 = MyErode(lung, sq);
 
-figure;
-subplot(1,2,1), imshow(Morph{1,1});
-subplot(1,2,2), imshow(temp1);
+figure('name', 'dilate');
+subplot(1,2,1), imshow(Morph{1,1}), title('built-in');
+subplot(1,2,2), imshow(temp1), title('My dilate');
 
-figure;
-subplot(1,2,1), imshow(Morph{1,2});
-subplot(1,2,2), imshow(temp2);
+figure('name', 'erode');
+subplot(1,2,1), imshow(Morph{1,2}), title('built-in');
+subplot(1,2,2), imshow(temp2), title('My erode');
 
 diff1 = Morph{1,1} - temp1;
 diff2 = Morph{1,2} - temp2;
