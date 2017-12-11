@@ -21,6 +21,6 @@ pet_med = zeros(size(pet));
 figure;
 temp = [];
 for i=1:3
-    temp = cat(2, temp, medfilt2(im2double(pet_noise(:,:,i))));
+    temp = cat(3, temp, medfilt2(im2double(pet_noise(:,:,i))));
 end
 imshow(temp);
